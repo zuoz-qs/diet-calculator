@@ -1,24 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>حاسبة النظام الغذائي</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- تأكد من صحة المسار -->
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Test Website!</h1>
-    </header>
+    <div class="container">
+        <h1>مرحباً بك في حاسبة النظام الغذائي!</h1>
+        <p>اكتشف احتياجاتك اليومية من السعرات والماكروز بناءً على أهدافك الصحية.</p>
 
-    <main>
-        <section>
-            <p>This is a simple test to check if my website works on GitHub Pages.</p>
-        </section>
-    </main>
+        <!-- قسم إدخال البيانات -->
+        <form id="calculator-form">
+            <label for="age">العمر:</label>
+            <input type="number" id="age" required>
+            
+            <label for="gender">الجنس:</label>
+            <select id="gender" required>
+                <option value="male">ذكر</option>
+                <option value="female">أنثى</option>
+            </select>
+            
+            <label for="weight">الوزن (كيلوغرام):</label>
+            <input type="number" id="weight" required>
+            
+            <label for="height">الطول (سنتيمتر):</label>
+            <input type="number" id="height" required>
+            
+            <label for="activity-level">مستوى النشاط البدني:</label>
+            <select id="activity-level" required>
+                <option value="sedentary">خامل (بدون تمارين)</option>
+                <option value="light">نشاط خفيف</option>
+                <option value="moderate">نشاط متوسط</option>
+                <option value="active">نشاط عالي</option>
+                <option value="intense">نشاط مكثف</option>
+            </select>
+            
+            <label for="goal">الهدف:</label>
+            <select id="goal" required>
+                <option value="lose">خسارة وزن</option>
+                <option value="maintain">الحفاظ على الوزن</option>
+                <option value="gain">زيادة الوزن</option>
+            </select>
 
-    <footer>
-        <p>&copy; 2024 My Test Website</p>
-    </footer>
+            <button type="submit">احسب</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>نتائجك</h2>
+            <p>السعرات الحرارية اليومية المطلوبة: <span id="calories"></span></p>
+            <p>الماكروز:</p>
+            <ul>
+                <li>بروتين: <span id="protein"></span> غرام</li>
+                <li>كربوهيدرات: <span id="carbs"></span> غرام</li>
+                <li>دهون: <span id="fats"></span> غرام</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script> <!-- تأكد من صحة المسار -->
 </body>
 </html>

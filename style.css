@@ -1,0 +1,58 @@
+body {
+    background-color: #121212; /* خلفية داكنة */
+    color: #ffffff; /* نص أبيض */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e; /* خلفية مظلمة للصندوق */
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4fd1c5; /* لون الحدود */
+    border-radius: 4px;
+    background-color: #333; /* خلفية الحقول */
+    color: #ffffff; /* نص الحقول */
+}
+
+button {
+    background-color: #4fd1c5; /* لون الزر */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #36b4a5; /* لون الزر عند التمرير */
+}
+
+.loading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
